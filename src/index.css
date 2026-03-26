@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --page-bg:
+      radial-gradient(circle at 10% 10%, rgba(212, 180, 106, 0.16), transparent 20%),
+      radial-gradient(circle at 85% 5%, rgba(111, 146, 119, 0.14), transparent 18%),
+      linear-gradient(180deg, #fbf7f1 0%, #f6efe7 40%, #f3f0ea 100%);
+    --page-bg-dark:
+      radial-gradient(circle at 15% 10%, rgba(212, 180, 106, 0.12), transparent 18%),
+      radial-gradient(circle at 85% 5%, rgba(111, 146, 119, 0.16), transparent 20%),
+      linear-gradient(180deg, #15211b 0%, #111a15 42%, #0e1511 100%);
+  }
+
+  * {
+    @apply border-white/10;
+  }
+
+  html {
+    @apply bg-ivory-50 text-ink-900;
+  }
+
+  body {
+    @apply min-h-screen bg-ivory-50 font-sans text-ink-900 antialiased transition-colors duration-500;
+    background-image: var(--page-bg);
+  }
+
+  .dark body {
+    @apply bg-sage-800 text-ivory-50;
+    background-image: var(--page-bg-dark);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight text-ink-900 dark:text-ivory-50;
+  }
+
+  p {
+    @apply text-base leading-7 text-ink-700 dark:text-ivory-100;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-ivory-50 dark:focus-visible:ring-offset-sage-800;
+  }
+
+  ::selection {
+    @apply bg-gold-200 text-ink-900;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-8xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-gold-200 bg-white/60 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.28em] text-sage-600 shadow-insetGlow backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-gold-100;
+  }
+
+  .glass-panel {
+    @apply rounded-4xl border border-white/55 bg-white/70 shadow-card shadow-black/5 backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:shadow-black/30;
+  }
+
+  .premium-card {
+    @apply glass-panel relative overflow-hidden p-6 transition duration-500 ease-luxury hover:-translate-y-1 hover:shadow-glow;
+  }
+
+  .luxury-button {
+    @apply inline-flex items-center justify-center rounded-full bg-sage-600 px-6 py-3.5 text-sm font-semibold text-white transition duration-300 ease-luxury hover:-translate-y-0.5 hover:bg-sage-500;
+  }
+
+  .outline-button {
+    @apply inline-flex items-center justify-center rounded-full border border-sage-200 bg-white/60 px-6 py-3.5 text-sm font-semibold text-ink-900 transition duration-300 ease-luxury hover:-translate-y-0.5 hover:border-sage-300 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-ivory-50 dark:hover:bg-white/10;
+  }
+
+  .nav-link {
+    @apply rounded-full px-4 py-2 text-sm font-medium text-ink-700 transition duration-300 hover:bg-white/70 hover:text-ink-900 dark:text-ivory-100 dark:hover:bg-white/10 dark:hover:text-ivory-50;
+  }
+
+  .nav-link-active {
+    @apply bg-white/75 text-ink-900 shadow-insetGlow dark:bg-white/10 dark:text-ivory-50;
+  }
+
+  .chip-button {
+    @apply rounded-full border border-white/60 bg-white/65 px-4 py-2 text-sm font-medium text-ink-700 transition duration-300 hover:border-sage-200 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-ivory-100 dark:hover:bg-white/10;
+  }
+
+  .chip-button-active {
+    @apply border-sage-500 bg-sage-600 text-white dark:border-gold-200 dark:bg-gold-300 dark:text-ink-900;
+  }
+
+  .input-shell {
+    @apply w-full rounded-3xl border border-sage-100 bg-white/75 px-4 py-3.5 text-ink-900 placeholder:text-ink-700 transition duration-300 focus:border-sage-300 focus:bg-white dark:border-white/10 dark:bg-white/5 dark:text-ivory-50 dark:placeholder:text-ivory-100 dark:focus:border-gold-200 dark:focus:bg-white/10;
+  }
+
+  .checkbox-shell {
+    @apply size-5 rounded-md border border-sage-200 text-sage-600 accent-sage-600 dark:border-white/10 dark:bg-white/5 dark:accent-gold-200;
+  }
+
+  .story-grid {
+    @apply grid gap-6 lg:grid-cols-[1.1fr_0.9fr];
+  }
+
+  .soft-divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-sage-200 to-transparent dark:via-white/10;
+  }
+
+  .stat-pill {
+    @apply rounded-full border border-white/60 bg-white/70 px-4 py-3 text-sm font-medium text-ink-700 shadow-insetGlow backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-ivory-100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

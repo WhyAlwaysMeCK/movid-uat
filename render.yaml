@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: movid-uat
+    runtime: node
+    plan: starter
+    region: frankfurt
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: UAT_BASIC_AUTH_USER
+        sync: false
+      - key: UAT_BASIC_AUTH_PASSWORD
+        sync: false
+    disk:
+      name: movid-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
