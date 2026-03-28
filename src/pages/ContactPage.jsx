@@ -18,7 +18,7 @@ function ContactPage() {
         <title>Kontakt | {brand.name}</title>
         <meta
           name="description"
-          content="Kontakt i roboczy formularz wiadomości dla marki Movid Psychodietetyka."
+          content={`Kontakt i roboczy formularz wiadomości dla marki ${brand.name}.`}
         />
       </Helmet>
 
@@ -27,9 +27,12 @@ function ContactPage() {
           <div className="grid gap-6">
             <Reveal className="glass-panel p-8 sm:p-10">
               <span className="eyebrow">Kontakt</span>
-              <h1 className="mt-6 text-5xl sm:text-6xl">Spokojny pierwszy kontakt jeszcze przed startem strony.</h1>
+              <h1 className="mt-6 text-5xl sm:text-6xl">
+                Spokojny pierwszy kontakt jeszcze przed startem strony.
+              </h1>
               <p className="mt-6">
-                Na tym etapie pracujemy lokalnie, więc dane kontaktowe są jeszcze ukryte. Możesz jednak już testować formularz i układ całej sekcji kontaktowej.
+                Na tym etapie pracujemy lokalnie, więc dane kontaktowe są jeszcze ukryte. Możesz
+                jednak już testować formularz i układ całej sekcji kontaktowej.
               </p>
             </Reveal>
 
@@ -37,8 +40,12 @@ function ContactPage() {
               {cards.map((item) => (
                 <div key={item.title} className="premium-card">
                   <item.icon className="size-6 text-sage-600 dark:text-gold-100" />
-                  <p className="mt-4 text-sm uppercase tracking-[0.2em] text-sage-600 dark:text-gold-100">{item.title}</p>
-                  <p className="mt-2 text-lg font-medium text-ink-900 dark:text-ivory-50">{item.value}</p>
+                  <p className="mt-4 text-sm uppercase tracking-[0.2em] text-sage-600 dark:text-gold-100">
+                    {item.title}
+                  </p>
+                  <p className="mt-2 text-lg font-medium text-ink-900 dark:text-ivory-50">
+                    {item.value}
+                  </p>
                 </div>
               ))}
             </Reveal>
@@ -47,7 +54,9 @@ function ContactPage() {
               <span className="eyebrow">Ważne</span>
               <h2 className="mt-5 text-4xl">Adres gabinetu nie jest jeszcze publikowany.</h2>
               <p className="mt-4">
-                Zostawiamy go poza widokiem publicznym do momentu, aż marka będzie gotowa do oficjalnego wdrożenia. Dzięki temu możesz spokojnie pracować nad stroną bez udostępniania pełnych danych.
+                Zostawiamy go poza widokiem publicznym do momentu, aż marka będzie gotowa do
+                oficjalnego wdrożenia. Dzięki temu możesz spokojnie pracować nad stroną bez
+                udostępniania pełnych danych.
               </p>
             </Reveal>
           </div>

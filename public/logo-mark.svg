@@ -1,0 +1,12 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" rx="36" fill="#F7F1E8"/>
+  <circle cx="36" cy="36" r="24.5" fill="#FCF8F1" stroke="url(#ring)" stroke-width="2"/>
+  <path d="M46.2 24.3C44.2 22.2 41.4 21.1 38 21.1C31.7 21.1 27.4 24.3 27.4 29.2C27.4 33.1 30 35.1 35.7 36.7L39.3 37.7C43.4 38.9 44.9 40.2 44.9 42.7C44.9 45.8 41.9 47.8 37.6 47.8C33.2 47.8 29.8 46.1 27.2 42.9" stroke="#173126" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M24.9 50.9C27.4 54 31.3 55.8 35.9 55.8C43.2 55.8 48.1 51.9 48.1 46.2C48.1 41.4 45 38.9 39 37.3L35.5 36.3C31.4 35.1 30.4 34 30.4 31.8C30.4 29.1 33 27.2 36.9 27.2C40.1 27.2 42.8 28.3 44.9 30.5" stroke="#B78B3E" stroke-width="2.4" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="ring" x1="20" y1="18" x2="52" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B7D63"/>
+      <stop offset="1" stop-color="#B78B3E"/>
+    </linearGradient>
+  </defs>
+</svg>

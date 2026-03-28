@@ -11,26 +11,34 @@ function AboutPage() {
         <title>O marce | {brand.name}</title>
         <meta
           name="description"
-          content="Poznaj założenia marki Movid Psychodietetyka, jej podejście do pracy i kierunek rozwoju strony."
+          content="Poznaj założenia marki Satelle Psychodietetyka, jej podejście do pracy i kierunek rozwoju strony."
         />
       </Helmet>
 
       <section className="section-shell pt-8">
         <SectionHeading
           eyebrow="O marce"
-          title="Movid Psychodietetyka powstaje jako spokojna, nowoczesna marka wokół relacji z jedzeniem."
+          title="Satelle Psychodietetyka powstaje jako spokojna, nowoczesna marka wokół relacji z jedzeniem."
           description="To wersja robocza serwisu, w której budujemy język, ofertę i doświadczenie klienta jeszcze przed publikacją i uruchomieniem płatnego hostingu."
         />
 
         <div className="story-grid mt-10">
           <Reveal className="glass-panel p-8 sm:p-10">
-            <p className="text-sm uppercase tracking-[0.22em] text-sage-600 dark:text-gold-100">Kierunek marki</p>
-            <h2 className="mt-4 text-4xl">Psychodietetyka ma pomagać nie tylko zmieniać jedzenie, ale też rozumieć mechanizmy, które za nim stoją.</h2>
+            <p className="text-sm uppercase tracking-[0.22em] text-sage-600 dark:text-gold-100">
+              Kierunek marki
+            </p>
+            <h2 className="mt-4 text-4xl">
+              Psychodietetyka ma pomagać nie tylko zmieniać jedzenie, ale też rozumieć mechanizmy,
+              które za nim stoją.
+            </h2>
             <p className="mt-5">
-              Wiele osób nie potrzebuje kolejnego restrykcyjnego planu, tylko spokojnego procesu, który połączy nawyki, emocje, codzienność i dietetykę w jedną spójną zmianę. Taki właśnie kierunek ma Movid.
+              Wiele osób nie potrzebuje kolejnego restrykcyjnego planu, tylko spokojnego procesu,
+              który połączy nawyki, emocje, codzienność i dietetykę w jedną spójną zmianę. Taki
+              właśnie kierunek ma Satelle.
             </p>
             <p className="mt-4">
-              Strona ma wspierać ten odbiór już od pierwszego wejścia: ma być estetyczna, klarowna i dawać poczucie, że za marką stoi przemyślany proces pracy.
+              Strona ma wspierać ten odbiór już od pierwszego wejścia: ma być estetyczna, klarowna
+              i dawać poczucie, że za marką stoi przemyślany proces pracy.
             </p>
           </Reveal>
 
@@ -38,7 +46,7 @@ function AboutPage() {
             <div className="relative h-full min-h-[24rem] bg-gradient-to-br from-ivory-100 via-white to-sage-100 dark:from-sage-700 dark:via-sage-800 dark:to-sage-600">
               <img
                 src="/practitioner-portrait.svg"
-                alt="Ilustracja reprezentująca markę Movid Psychodietetyka"
+                alt="Ilustracja reprezentująca markę Satelle Psychodietetyka"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -78,11 +86,16 @@ function AboutPage() {
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <span className="eyebrow">{brand.shortName}</span>
-              <h2 className="mt-5 text-4xl">Założenia marki, które mają budować zaufanie jeszcze przed pierwszą wizytą.</h2>
+              <h2 className="mt-5 text-4xl">
+                Założenia marki, które mają budować zaufanie jeszcze przed pierwszą wizytą.
+              </h2>
             </div>
             <div className="grid gap-4">
               {certifications.map((item) => (
-                <div key={item} className="rounded-[1.75rem] border border-white/60 bg-white/70 p-5 dark:border-white/10 dark:bg-white/5">
+                <div
+                  key={item}
+                  className="rounded-[1.75rem] border border-white/60 bg-white/70 p-5 dark:border-white/10 dark:bg-white/5"
+                >
                   <p>{item}</p>
                 </div>
               ))}

@@ -47,9 +47,11 @@ function Navbar() {
           ].join(" ")}
         >
           <Link to="/" className="flex items-center gap-3" aria-label={`${brand.name} start`}>
-            <span className="flex size-11 items-center justify-center rounded-full bg-gradient-to-br from-sage-500 to-sage-700 font-display text-lg text-white shadow-lg shadow-sage-900/20">
-              M
-            </span>
+            <img
+              src="/logo-mark.svg"
+              alt={`${brand.shortName} logo`}
+              className="size-11 rounded-full object-cover shadow-lg shadow-sage-900/20"
+            />
             <div>
               <div className="font-display text-xl text-ink-900 dark:text-ivory-50">{brand.shortName}</div>
               <p className="text-xs uppercase tracking-[0.22em] text-sage-600 dark:text-gold-100">

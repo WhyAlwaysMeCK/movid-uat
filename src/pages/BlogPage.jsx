@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import ArticleCard from "../components/ui/ArticleCard";
 import SectionHeading from "../components/ui/SectionHeading";
 import Reveal from "../components/ui/Reveal";
-import { articles, blogCategories } from "../data/content";
+import { articles, blogCategories, brand } from "../data/content";
 
 function BlogPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,10 +22,10 @@ function BlogPage() {
   return (
     <>
       <Helmet>
-        <title>Blog | Movid Psychodietetyka</title>
+        <title>Blog | {brand.name}</title>
         <meta
           name="description"
-          content="Blog marki Movid Psychodietetyka z tekstami o relacji z jedzeniem, nawykach i dietetyce klinicznej."
+          content={`Blog marki ${brand.name} z tekstami o relacji z jedzeniem, nawykach i dietetyce klinicznej.`}
         />
       </Helmet>
 
@@ -70,7 +70,9 @@ function BlogPage() {
         {!filteredArticles.length ? (
           <div className="glass-panel mt-10 p-8 text-center">
             <h2 className="text-3xl">Nie znaleziono artykułów dla tego wyszukiwania</h2>
-            <p className="mt-4">Spróbuj szerszego hasła albo zmień kategorię, aby zobaczyć wszystkie wpisy.</p>
+            <p className="mt-4">
+              Spróbuj szerszego hasła albo zmień kategorię, aby zobaczyć wszystkie wpisy.
+            </p>
           </div>
         ) : null}
       </section>

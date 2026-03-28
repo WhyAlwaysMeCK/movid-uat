@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import SectionHeading from "../components/ui/SectionHeading";
 import ServiceCard from "../components/ui/ServiceCard";
 import Reveal from "../components/ui/Reveal";
-import { services } from "../data/content";
+import { brand, services } from "../data/content";
 
 const filters = ["Wszystko", "Psychodietetyka", "Dietetyka kliniczna"];
 
@@ -20,10 +20,10 @@ function ServicesPage() {
   return (
     <>
       <Helmet>
-        <title>Oferta | Movid Psychodietetyka</title>
+        <title>Oferta | {brand.name}</title>
         <meta
           name="description"
-          content="Sprawdź ofertę psychodietetyki i dietetyki klinicznej w roboczej wersji strony Movid."
+          content={`Sprawdź ofertę psychodietetyki i dietetyki klinicznej w roboczej wersji strony ${brand.shortName}.`}
         />
       </Helmet>
 
@@ -63,7 +63,9 @@ function ServicesPage() {
               <span className="eyebrow">Następny krok</span>
               <h2 className="mt-5 text-4xl">Nie wiesz jeszcze, od czego zacząć?</h2>
               <p className="mt-4 max-w-2xl">
-                Najlepszym wejściem do współpracy będzie zwykle konsultacja psychodietetyczna albo konsultacja dietetyczna kliniczna. To właśnie na ich podstawie można dobrać dalszy kierunek pracy.
+                Najlepszym wejściem do współpracy będzie zwykle konsultacja psychodietetyczna albo
+                konsultacja dietetyczna kliniczna. To właśnie na ich podstawie można dobrać dalszy
+                kierunek pracy.
               </p>
             </div>
             <Link to="/booking" className="luxury-button">

@@ -20,7 +20,7 @@ function HomePage() {
         <title>{brand.name} | Psychodietetyka w Warszawie</title>
         <meta
           name="description"
-          content="Robocza wersja strony Movid Psychodietetyka: psychodietetyka, dietetyka kliniczna, blog i system rezerwacji konsultacji."
+          content="Robocza wersja strony Satelle Psychodietetyka: psychodietetyka, dietetyka kliniczna, blog i system rezerwacji konsultacji."
         />
       </Helmet>
 

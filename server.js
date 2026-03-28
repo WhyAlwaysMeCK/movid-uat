@@ -9,7 +9,7 @@ import { z } from "zod";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dataDirectory = path.join(__dirname, "data");
-const databasePath = path.join(dataDirectory, "movid.sqlite");
+const databasePath = path.join(dataDirectory, "satelle.sqlite");
 const distDirectory = path.join(__dirname, "dist");
 const port = Number(process.env.PORT || 3001);
 const basicAuthUser = process.env.UAT_BASIC_AUTH_USER || "";
@@ -338,7 +338,7 @@ app.use("/api", (_request, response) => {
 });
 
 app.listen(port, () => {
-  console.log(`Movid server running on http://localhost:${port}`);
+  console.log(`Satelle server running on http://localhost:${port}`);
 });
 
 function buildAvailability() {
@@ -415,7 +415,7 @@ function requireBasicAuth(request, response, next) {
 }
 
 function challengeBasicAuth(response) {
-  response.setHeader("WWW-Authenticate", 'Basic realm="Movid UAT"');
+  response.setHeader("WWW-Authenticate", 'Basic realm="Satelle UAT"');
   return response.status(401).send("Authentication required.");
 }
 

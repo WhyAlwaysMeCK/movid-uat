@@ -1,7 +1,7 @@
 export const brand = {
-  name: "Movid Psychodietetyka",
-  shortName: "Movid",
-  tagline: "Spokojna relacja z jedzeniem. Realna zmiana.",
+  name: "Satelle Psychodietetyka",
+  shortName: "Satelle",
+  tagline: "Spokój w relacji z jedzeniem.",
   city: "Warszawa",
   address: "",
   phone: "",
@@ -13,7 +13,7 @@ export const brand = {
   headline:
     "Psychodietetyka i dietetyka kliniczna dla osób, które chcą odzyskać spokój wokół jedzenia, więcej energii i plan dopasowany do codziennego życia.",
   subheadline:
-    "Movid łączy pracę nad nawykami, emocjami i odżywianiem w jednej spokojnej, uporządkowanej ścieżce wsparcia."
+    "Satelle łączy pracę nad nawykami, emocjami i odżywianiem w jednej spokojnej, uporządkowanej ścieżce wsparcia."
 };
 
 export const trustMetrics = [
@@ -163,7 +163,7 @@ export const timeline = [
   {
     year: "Start",
     title: "Pomysł na spokojniejszą dietetykę",
-    copy: "Movid powstaje z potrzeby pracy, która nie opiera się na presji, tylko na realnej zmianie nawyków i lepszym rozumieniu siebie."
+    copy: "Satelle powstaje z potrzeby pracy, która nie opiera się na presji, tylko na realnej zmianie nawyków i lepszym rozumieniu siebie."
   },
   {
     year: "Etap 2",
@@ -177,7 +177,7 @@ export const timeline = [
   },
   {
     year: "Dziś",
-    title: "Movid Psychodietetyka",
+    title: "Satelle Psychodietetyka",
     copy: "Marka rozwija roboczą wersję strony i procesu współpracy, aby z czasem uruchomić pełny serwis i zapisy online."
   }
 ];

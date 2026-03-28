@@ -11,7 +11,7 @@ export const useUiStore = create(
         }))
     }),
     {
-      name: "movid-ui"
+      name: "satelle-ui"
     }
   )
 );
