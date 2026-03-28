@@ -27,6 +27,7 @@
   body {
     @apply min-h-screen bg-ivory-50 font-sans text-ink-900 antialiased transition-colors duration-500;
     background-image: var(--page-bg);
+    overflow-x: hidden;
   }
 
   .dark body {
@@ -70,11 +71,11 @@
   }
 
   .glass-panel {
-    @apply rounded-4xl border border-white/55 bg-white/70 shadow-card shadow-black/5 backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:shadow-black/30;
+    @apply min-w-0 rounded-4xl border border-white/55 bg-white/70 shadow-card shadow-black/5 backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:shadow-black/30;
   }
 
   .premium-card {
-    @apply glass-panel relative overflow-hidden p-6 transition duration-500 ease-luxury hover:-translate-y-1 hover:shadow-glow;
+    @apply glass-panel relative overflow-hidden break-words p-6 transition duration-500 ease-luxury hover:-translate-y-1 hover:shadow-glow;
   }
 
   .luxury-button {
@@ -119,6 +120,7 @@
 
   .stat-pill {
     @apply rounded-full border border-white/60 bg-white/70 px-4 py-3 text-sm font-medium text-ink-700 shadow-insetGlow backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-ivory-100;
+    overflow-wrap: anywhere;
   }
 }
 

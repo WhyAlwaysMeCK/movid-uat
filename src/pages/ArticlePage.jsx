@@ -23,7 +23,7 @@ function ArticlePage() {
       </Helmet>
 
       <article className="section-shell pt-8">
-        <Reveal className="glass-panel p-8 sm:p-10 lg:p-12">
+        <Reveal className="glass-panel p-6 sm:p-10 lg:p-12">
           <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-sage-700 dark:text-gold-100">
             <ArrowLeft className="size-4" />
             Wróć do bloga
@@ -33,12 +33,12 @@ function ArticlePage() {
             <span className="stat-pill">{article.readTime}</span>
             <span className="stat-pill">{article.publishedAt}</span>
           </div>
-          <h1 className="mt-8 max-w-4xl text-balance text-5xl sm:text-6xl">{article.title}</h1>
+          <h1 className="mt-8 max-w-4xl break-words text-balance text-4xl sm:text-5xl lg:text-6xl">{article.title}</h1>
           <p className="mt-6 max-w-3xl text-lg">{article.summary}</p>
         </Reveal>
 
         <div className="mx-auto mt-12 max-w-4xl">
-          <div className="glass-panel p-8 sm:p-10">
+          <div className="glass-panel p-6 sm:p-10">
             {article.sections.map((section, index) => (
               <section key={section.heading} className={index < article.sections.length - 1 ? "mb-12" : ""}>
                 <h2 className="text-3xl">{section.heading}</h2>

@@ -59,11 +59,11 @@ function UatPage() {
       </Helmet>
 
       <section className="section-shell pt-8">
-        <Reveal className="glass-panel p-8 sm:p-10">
+        <Reveal className="glass-panel p-6 sm:p-10">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <span className="eyebrow">Środowisko UAT</span>
-              <h1 className="mt-6 text-5xl sm:text-6xl">
+              <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl">
                 Panel testowy rekordów, wiadomości i zdarzeń mailowych.
               </h1>
               <p className="mt-5 max-w-3xl">
@@ -111,11 +111,11 @@ function UatPage() {
             isLoading={isLoading}
             renderItem={(item) => (
               <>
-                <p className="font-semibold text-ink-900 dark:text-ivory-50">
+                <p className="break-words font-semibold text-ink-900 dark:text-ivory-50">
                   {[item.first_name, item.last_name].filter(Boolean).join(" ") || item.service_name}
                 </p>
-                <p className="mt-2 text-sm">{item.email}</p>
-                <p className="mt-2 text-sm">{item.slot}</p>
+                <p className="mt-2 break-all text-sm">{item.email}</p>
+                <p className="mt-2 break-words text-sm">{item.slot}</p>
               </>
             )}
           />
@@ -125,9 +125,9 @@ function UatPage() {
             isLoading={isLoading}
             renderItem={(item) => (
               <>
-                <p className="font-semibold text-ink-900 dark:text-ivory-50">{item.full_name}</p>
-                <p className="mt-2 text-sm">{item.reason}</p>
-                <p className="mt-2 text-sm">{item.email}</p>
+                <p className="break-words font-semibold text-ink-900 dark:text-ivory-50">{item.full_name}</p>
+                <p className="mt-2 break-words text-sm">{item.reason}</p>
+                <p className="mt-2 break-all text-sm">{item.email}</p>
               </>
             )}
           />
@@ -137,9 +137,9 @@ function UatPage() {
             isLoading={isLoading}
             renderItem={(item) => (
               <>
-                <p className="font-semibold text-ink-900 dark:text-ivory-50">{item.subject}</p>
-                <p className="mt-2 text-sm">{item.recipient}</p>
-                <p className="mt-2 text-sm">{item.preview}</p>
+                <p className="break-words font-semibold text-ink-900 dark:text-ivory-50">{item.subject}</p>
+                <p className="mt-2 break-all text-sm">{item.recipient}</p>
+                <p className="mt-2 break-words text-sm">{item.preview}</p>
               </>
             )}
           />

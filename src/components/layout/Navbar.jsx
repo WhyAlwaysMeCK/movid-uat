@@ -37,24 +37,24 @@ function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 px-5 pt-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-50 px-3 pt-3 sm:px-6 lg:px-8">
         <div
           className={[
-            "section-shell flex items-center justify-between rounded-full border px-4 py-3 transition duration-500 ease-luxury sm:px-6",
+            "section-shell flex items-center justify-between gap-3 rounded-full border px-3 py-2.5 transition duration-500 ease-luxury sm:px-6 sm:py-3",
             isScrolled
               ? "border-white/60 bg-white/70 shadow-card backdrop-blur-xl dark:border-white/10 dark:bg-sage-800/70"
               : "border-transparent bg-white/35 backdrop-blur-md dark:bg-white/5"
           ].join(" ")}
         >
-          <Link to="/" className="flex items-center gap-3" aria-label={`${brand.name} start`}>
+          <Link to="/" className="flex min-w-0 flex-1 items-center gap-3 lg:flex-none" aria-label={`${brand.name} start`}>
             <img
               src="/logo-mark.svg"
               alt={`${brand.shortName} logo`}
-              className="size-11 rounded-full object-cover shadow-lg shadow-sage-900/20"
+              className="size-10 shrink-0 rounded-full object-cover shadow-lg shadow-sage-900/20 sm:size-11"
             />
-            <div>
-              <div className="font-display text-xl text-ink-900 dark:text-ivory-50">{brand.shortName}</div>
-              <p className="text-xs uppercase tracking-[0.22em] text-sage-600 dark:text-gold-100">
+            <div className="min-w-0">
+              <div className="truncate font-display text-lg leading-none text-ink-900 dark:text-ivory-50 sm:text-xl">{brand.shortName}</div>
+              <p className="hidden text-[10px] uppercase tracking-[0.18em] text-sage-600 dark:text-gold-100 min-[380px]:block sm:text-xs sm:tracking-[0.22em]">
                 Psychodietetyka
               </p>
             </div>
@@ -81,7 +81,7 @@ function Navbar() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-3 lg:hidden">
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3 lg:hidden">
             <ThemeToggle />
             <button
               type="button"
@@ -108,7 +108,7 @@ function Navbar() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="glass-panel mx-auto flex min-h-[70vh] max-w-xl flex-col p-6"
+              className="glass-panel mx-auto flex min-h-[70vh] max-w-xl flex-col p-5 sm:p-6"
             >
               <div className="mb-10 flex items-center justify-between">
                 <div>

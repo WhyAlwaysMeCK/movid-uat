@@ -16,9 +16,9 @@ function BookingPage() {
 
       <section className="section-shell pt-8">
         <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
-          <Reveal className="glass-panel p-8 sm:p-10">
+          <Reveal className="glass-panel p-6 sm:p-10">
             <span className="eyebrow">System rezerwacji</span>
-            <h1 className="mt-6 text-5xl sm:text-6xl">
+            <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl">
               Flow zapisu gotowy do testów jeszcze przed publikacją strony.
             </h1>
             <p className="mt-6">

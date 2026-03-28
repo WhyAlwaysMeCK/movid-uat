@@ -25,9 +25,9 @@ function ContactPage() {
       <section className="section-shell pt-8">
         <div className="grid gap-6 lg:grid-cols-[0.94fr_1.06fr]">
           <div className="grid gap-6">
-            <Reveal className="glass-panel p-8 sm:p-10">
+            <Reveal className="glass-panel p-6 sm:p-10">
               <span className="eyebrow">Kontakt</span>
-              <h1 className="mt-6 text-5xl sm:text-6xl">
+              <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl">
                 Spokojny pierwszy kontakt jeszcze przed startem strony.
               </h1>
               <p className="mt-6">
@@ -50,9 +50,9 @@ function ContactPage() {
               ))}
             </Reveal>
 
-            <Reveal className="glass-panel p-8 sm:p-10">
+            <Reveal className="glass-panel p-6 sm:p-10">
               <span className="eyebrow">Ważne</span>
-              <h2 className="mt-5 text-4xl">Adres gabinetu nie jest jeszcze publikowany.</h2>
+              <h2 className="mt-5 text-3xl sm:text-4xl">Adres gabinetu nie jest jeszcze publikowany.</h2>
               <p className="mt-4">
                 Zostawiamy go poza widokiem publicznym do momentu, aż marka będzie gotowa do
                 oficjalnego wdrożenia. Dzięki temu możesz spokojnie pracować nad stroną bez

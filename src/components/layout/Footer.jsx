@@ -14,7 +14,7 @@ function Footer() {
         <section className="glass-panel overflow-hidden px-6 py-8 sm:px-8 lg:px-10">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <img
                   src="/logo-mark.svg"
                   alt={`${brand.shortName} logo`}
@@ -22,7 +22,7 @@ function Footer() {
                 />
                 <span className="eyebrow">{brand.name}</span>
               </div>
-              <h2 className="mt-5 max-w-xl text-4xl md:text-5xl">
+              <h2 className="mt-5 max-w-xl text-3xl sm:text-4xl md:text-5xl">
                 Strona robocza budowana wokół spokojnej relacji z jedzeniem i realnej zmiany.
               </h2>
               <p className="mt-5 max-w-2xl">

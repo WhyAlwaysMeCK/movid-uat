@@ -16,8 +16,8 @@ function TestimonialCarousel({ items }) {
   const activeItem = items[activeIndex];
 
   return (
-    <div className="glass-panel relative overflow-hidden p-8 md:p-10">
-      <Quote className="absolute right-8 top-8 size-14 text-gold-300/55 dark:text-gold-200/20" />
+    <div className="glass-panel relative overflow-hidden p-6 md:p-10">
+      <Quote className="absolute right-5 top-5 size-10 text-gold-300/55 dark:text-gold-200/20 md:right-8 md:top-8 md:size-14" />
       <AnimatePresence mode="wait">
         <motion.div
           key={activeItem.name}
@@ -26,7 +26,7 @@ function TestimonialCarousel({ items }) {
           exit={{ opacity: 0, y: -18 }}
           transition={{ duration: 0.45 }}
         >
-          <p className="max-w-4xl text-2xl font-medium leading-relaxed text-ink-900 dark:text-ivory-50 md:text-3xl">
+          <p className="max-w-4xl text-xl font-medium leading-relaxed text-ink-900 dark:text-ivory-50 sm:text-2xl md:text-3xl">
             "{activeItem.quote}"
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-between gap-6">
@@ -34,7 +34,7 @@ function TestimonialCarousel({ items }) {
               <p className="text-lg font-semibold text-ink-900 dark:text-ivory-50">{activeItem.name}</p>
               <p>{activeItem.role}</p>
             </div>
-            <div className="rounded-full border border-gold-200/60 bg-gold-100/50 px-4 py-2 text-sm font-medium text-sage-700 dark:border-white/10 dark:bg-white/5 dark:text-gold-100">
+            <div className="max-w-full break-words rounded-full border border-gold-200/60 bg-gold-100/50 px-4 py-2 text-sm font-medium text-sage-700 dark:border-white/10 dark:bg-white/5 dark:text-gold-100">
               {activeItem.outcome}
             </div>
           </div>

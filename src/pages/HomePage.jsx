@@ -26,9 +26,9 @@ function HomePage() {
 
       <section className="section-shell pt-8">
         <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr]">
-          <motion.div style={{ y: heroY, opacity: heroOpacity }} className="glass-panel overflow-hidden p-8 sm:p-10 lg:p-12">
+          <motion.div style={{ y: heroY, opacity: heroOpacity }} className="glass-panel overflow-hidden p-6 sm:p-10 lg:p-12">
             <span className="eyebrow">{brand.tagline}</span>
-            <h1 className="mt-6 max-w-4xl text-balance text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 max-w-4xl text-balance text-4xl leading-[0.98] sm:text-6xl lg:text-7xl">
               Psychodietetyka i dietetyka, które pomagają odzyskać spokój wokół jedzenia.
             </h1>
             <p className="mt-6 max-w-2xl text-lg">{brand.headline}</p>
@@ -54,7 +54,7 @@ function HomePage() {
           </motion.div>
 
           <Reveal className="grid gap-6">
-            <div className="glass-panel relative overflow-hidden bg-hero-grid p-8 sm:p-10">
+            <div className="glass-panel relative overflow-hidden bg-hero-grid p-6 sm:p-10">
               <motion.div
                 className="absolute -right-12 top-10 h-40 w-40 rounded-full bg-gold-200/40 blur-3xl dark:bg-gold-300/10"
                 animate={{ scale: [1, 1.08, 1], opacity: [0.4, 0.7, 0.4] }}
@@ -68,7 +68,7 @@ function HomePage() {
                 <div className="mt-8 grid gap-5">
                   <div className="rounded-[1.75rem] border border-white/60 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
                     <p className="text-sm uppercase tracking-[0.22em] text-sage-600 dark:text-gold-100">Dlaczego to działa</p>
-                    <h2 className="mt-3 text-4xl">Spokojny przekaz, czytelna oferta i prosty pierwszy krok</h2>
+                    <h2 className="mt-3 text-3xl sm:text-4xl">Spokojny przekaz, czytelna oferta i prosty pierwszy krok</h2>
                     <p className="mt-4">
                       Od pierwszego wejścia użytkownik powinien wiedzieć, czym zajmuje się marka, dla kogo jest i jak łatwo można przejść do kontaktu lub rezerwacji.
                     </p>
@@ -92,9 +92,9 @@ function HomePage() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               {trustMetrics.slice(0, 4).map((item) => (
-                <div key={item.label} className="stat-pill flex items-center justify-between gap-4 px-5 py-4">
+                <div key={item.label} className="stat-pill flex flex-col items-start gap-2 px-5 py-4 text-left sm:flex-row sm:items-center sm:justify-between">
                   <span className="font-display text-3xl text-ink-900 dark:text-ivory-50">{item.value}</span>
-                  <span className="max-w-[12rem] text-right text-sm">{item.label}</span>
+                  <span className="max-w-none text-sm sm:max-w-[12rem] sm:text-right">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -120,9 +120,9 @@ function HomePage() {
 
       <section className="section-shell mt-24">
         <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
-          <Reveal className="glass-panel p-8 sm:p-10">
+          <Reveal className="glass-panel p-6 sm:p-10">
             <span className="eyebrow">Standard pracy</span>
-            <h2 className="mt-6 text-4xl">Marka oparta na spokoju, zrozumieniu i realnych zmianach.</h2>
+            <h2 className="mt-6 text-3xl sm:text-4xl">Marka oparta na spokoju, zrozumieniu i realnych zmianach.</h2>
             <div className="mt-8 space-y-4">
               {certifications.map((item) => (
                 <div key={item} className="flex gap-4 rounded-[1.75rem] border border-white/60 bg-white/70 p-4 dark:border-white/10 dark:bg-white/5">
@@ -140,7 +140,7 @@ function HomePage() {
       </section>
 
       <section className="section-shell mt-24">
-        <Reveal className="glass-panel overflow-hidden p-8 sm:p-10 lg:p-12">
+        <Reveal className="glass-panel overflow-hidden p-6 sm:p-10 lg:p-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <span className="eyebrow">Pierwszy krok</span>
